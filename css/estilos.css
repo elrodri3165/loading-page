@@ -1,0 +1,52 @@
+ul{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    padding: 0px;
+    margin: 0px;
+}
+img{
+    width: 100%;
+}
+/* estos son estilos generales que uso. si complican el projecto borrar o modificar. */
+/* la img a 100% la uso para que todas las imagenes se carguen ocupando el 100% de 
+espacio de su caja contenedora. 
+asi seteo las imaganes con el tamaño quie quiero dando tamaño al div que la contiene. */
+
+
+
+#loading{
+    width: 100px;
+    margin-left:  auto;
+    margin-right:auto;
+    margin-top: 300px;
+    position: fixed;
+    left: 50%
+}
+#loading img{
+    animation-iteration-count: infinite;
+    animation-name: rotacion;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+}
+@keyframes rotacion{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+
+
+#container{
+    display: none;
+    width: 70%;
+    height: 50%;
+    margin: auto;
+    margin-top: 300px;
+    border: 1px solid red;
+}

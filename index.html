@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Loading page</title>
+</head>
+<!-- es importante que este la funcion javascript en onload del body -->
+<!-- pueden cambiar una letra para probar la pantalla de carga.. cuando el body se carga 
+por completo, se ejecuta la funcion y oculta la imagen de carga y muestra el cuerpo real 
+de la pagina -->
+<body onload="bodydisplay()">
+<!-- ESte div debe estar primero en la pagina.. -->
+    <div id="loading">
+        <img src="img/loading.png" alt="">
+    </div>
+
+    <!-- luego las secciones de la pagina o divs contenedores deben estan en display:none -->
+    <!-- se puede ocultar solo el container total o todas las secciones por separado. -->
+
+    <div id="container">
+        <p>Hola</p>
+
+    </div>
+
+
+
+
+
+
+    <script type="text/javascript" src="js/bodydisplay.js"></script>
+</body>
+</html>
